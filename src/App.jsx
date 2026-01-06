@@ -16,8 +16,6 @@ export const goods = [
 ];
 
 export const App = () => {
-  const value = 0;
-
   const [selectedGood, setSelectedGood] = useState('Jam');
 
   function isGoodSelected(good) {
