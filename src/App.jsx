@@ -24,7 +24,7 @@ export const App = () => {
 
   function handleGoodSelected(good) {
     if (isGoodSelected(good)) {
-      setSelectedGood(undefined);
+      setSelectedGood('');
     } else {
       setSelectedGood(good);
     }
@@ -44,7 +44,7 @@ export const App = () => {
             data-cy="ClearButton"
             type="button"
             className="delete ml-3"
-            onClick={() => setSelectedGood(undefined)}
+            onClick={() => setSelectedGood('')}
           />
         </h1>
       )}
